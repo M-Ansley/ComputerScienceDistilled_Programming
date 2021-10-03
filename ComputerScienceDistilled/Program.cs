@@ -21,20 +21,17 @@ namespace ComputerScienceDistilled
             }
             catch (Exception e)
             {
-                Console.WriteLine("Incorrect input received. Please try again.");
-                Console.WriteLine("Error: " + e.Message);
-                Console.ReadLine();
-                Console.Clear();
-                Main();
+                ExceptionCase(e);
             }
         }
 
         static void CallFunction(int input)
         {
+            string functionName = string.Empty;
             switch (input)
             {
                 case 0: // Alphabetical Fish
-                    string functionName = "Alphabetical Fish";
+                    functionName = "Alphabetical Fish";
                     Console.WriteLine("Function Selected: " + functionName);
                     List<string> saltwaterFish = new List<string>() { "Cod", "Herring", "Marlin" };
                     List<string> freshwaterFish = new List<string>() { "Asp", "Carp", "Ide", "Trout" };
@@ -43,6 +40,21 @@ namespace ComputerScienceDistilled
                     Console.ReadLine();
                     break;
                 case 1:
+                    functionName = "Binary Search";
+                    Console.WriteLine("Function Selected: " + functionName);
+                    int[] args = new int[] { 0, 2, 3, 4, 7, 8, 9, 11, 23, 23, 34, 54, 55, 56, 78, 99, 100, 121, 124, 156, 179, 181};
+                    Console.WriteLine("List is: [{0}]", string.Join(", ", args));
+                    Console.WriteLine("Please type the number you'd like to find the index position of using a binary search.");
+                    string answer = Console.ReadLine();
+                    try
+                    {
+                        int target = int.Parse(answer);
+                        BinarySearch(args, target);
+                    }
+                    catch (Exception e)
+                    {
+                        ExceptionCase(e);
+                    }
 
                     break;
                 case 2:
@@ -133,6 +145,37 @@ namespace ComputerScienceDistilled
 
         #endregion
 
+        #region BinarySearch
+
+        static void BinarySearch(int[] args, int targetVal)
+        {
+            int left = 0, right = args.Length, middle = 0;
+
+            while (left <= right)
+            {
+                middle = (left + right) / 2;
+                if (targetVal == args[middle])
+                {
+                    Console.WriteLine("Target found: " + targetVal + " at index position: " + middle);
+                    Console.ReadLine();
+                    return;
+                }
+                else if (targetVal > args[middle])
+                {
+                    left = middle + 1;
+                }
+                else
+                {
+                    right = middle - 1;
+                }
+
+            }
+            Console.WriteLine("Target not found in array");
+            Console.ReadLine();
+        }
+
+        #endregion
+
         #region Generic
         static void PrintList(List<string> list)
         {
@@ -142,6 +185,15 @@ namespace ComputerScienceDistilled
                 Console.WriteLine(entry);
             }           
 
+        }
+
+        static void ExceptionCase(Exception e)
+        {
+            Console.WriteLine("Incorrect input received. Please try again.");
+            Console.WriteLine("Error: " + e.Message);
+            Console.ReadLine();
+            Console.Clear();
+            Main();
         }
 
         #endregion

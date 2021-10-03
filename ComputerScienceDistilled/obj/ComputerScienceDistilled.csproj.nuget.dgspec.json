@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mcans\\Documents\\GitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\ComputerScienceDistilled.csproj": {}
+    "C:\\Users\\mcans\\Documents\\LocalGitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\ComputerScienceDistilled.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mcans\\Documents\\GitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\ComputerScienceDistilled.csproj": {
+    "C:\\Users\\mcans\\Documents\\LocalGitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\ComputerScienceDistilled.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mcans\\Documents\\GitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\ComputerScienceDistilled.csproj",
+        "projectUniqueName": "C:\\Users\\mcans\\Documents\\LocalGitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\ComputerScienceDistilled.csproj",
         "projectName": "ComputerScienceDistilled",
-        "projectPath": "C:\\Users\\mcans\\Documents\\GitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\ComputerScienceDistilled.csproj",
+        "projectPath": "C:\\Users\\mcans\\Documents\\LocalGitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\ComputerScienceDistilled.csproj",
         "packagesPath": "C:\\Users\\mcans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mcans\\Documents\\GitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\obj\\",
+        "outputPath": "C:\\Users\\mcans\\Documents\\LocalGitHub\\ComputerScienceDistilled_Programming\\ComputerScienceDistilled\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mcans\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
