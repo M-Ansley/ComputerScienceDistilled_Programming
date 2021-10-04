@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using static ComputerScienceDistilled.SortingAlgorithms;
 
 namespace ComputerScienceDistilled
 {
@@ -58,6 +59,8 @@ namespace ComputerScienceDistilled
 
                     break;
                 case 2:
+                    int[] sortArgs = new int[] { 2, 5, -4, 11, 0, 18, 22, 67, 51, 6 };
+                    SortingAlgorithms.Quick_Sort_Main(sortArgs);
                     break;
                 case 3:
                     break;
