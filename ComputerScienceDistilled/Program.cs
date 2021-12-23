@@ -63,6 +63,8 @@ namespace ComputerScienceDistilled
                     SortingAlgorithms.Quick_Sort_Main(sortArgs);
                     break;
                 case 3:
+                    Console.WriteLine("Testing");
+                    Console.ReadLine();
                     break;
                 default:
                     break;
